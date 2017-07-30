@@ -1,2 +1,2 @@
-Application/node_modules
-Application/public/node_modules
+/node-modules
+public/node_modules

@@ -1,6 +1,0 @@
-<h3>Please enter your name!</h3>
-<form #loginForm = 'ngForm' (submit)='login()'>
-<label for="name">Name:</label>
-<input type="text" name="name" id = 'name' required minlength = '4' #name = 'ngModel' [(ngModel)]="user.name"><br>
-<input type="submit" [disabled] = '!loginForm.valid'>
-</form>

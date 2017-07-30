@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
-    user: {type:String, required:true},
+     user:{ type: String, required: true},
     
 });
 // Remember we can treat mongoose.model() as a getter function or a setter function
@@ -10,4 +10,4 @@ var UserSchema = new mongoose.Schema({
 mongoose.model('User', UserSchema);
 
 // Custom Validations for user schema
-UserSchema.path('name').required(true, 'First Name cannot be blank');
+UserSchema.path('user').required(true, 'First Name cannot be blank');

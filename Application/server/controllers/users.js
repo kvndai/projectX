@@ -22,7 +22,7 @@ function UsersController(){
 		// store session here
 		u.save()
 		.then(() => {
-			res.json(true);
+			res.json;
 		})
 		.catch((err) => {
 			res.status(401).json({message: "create() controller error", err: err})

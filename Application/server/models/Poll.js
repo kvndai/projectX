@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var PollSchema = new mongoose.Schema({
-    _user: {type : Schema.Types.ObjectId, ref:'User'}, 
+    _user: {type : mongoose.Schema.Types.ObjectId, ref:'User'}, 
     question:{ type: String, required: true},
     option1: { type: String, required: true},
     vote1: { type: Number},
